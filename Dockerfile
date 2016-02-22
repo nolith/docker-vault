@@ -1,7 +1,7 @@
 FROM progrium/busybox
-MAINTAINER Stephane Jourdan <fasten@fastmail.fm>
-ENV REFRESHED_AT 2016-01-18
-ENV VAULT_VERSION 0.4.1
+MAINTAINER Alessio Caiazza <alessio@chorally.com>
+ENV REFRESHED_AT 2016-02-22
+ENV VAULT_VERSION 0.5.0
 
 ADD https://releases.hashicorp.com/vault/${VAULT_VERSION}/vault_${VAULT_VERSION}_linux_amd64.zip /tmp/vault.zip
 RUN cd /bin && unzip /tmp/vault.zip && chmod +x /bin/vault && rm /tmp/vault.zip
